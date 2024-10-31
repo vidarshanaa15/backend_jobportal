@@ -14,7 +14,8 @@ public class UserMapper {
                 user.getEmail(),
                 user.getCity(),
                 user.getState(),
-                user.getPcode()
+                user.getPcode(),
+                user.getUser_type()
         );
     }
 
@@ -28,7 +29,8 @@ public class UserMapper {
                 userDto.getEmail(),
                 userDto.getCity(),
                 userDto.getState(),
-                userDto.getPcode()
+                userDto.getPcode(),
+                userDto.getUser_type()
         );
     }
 }

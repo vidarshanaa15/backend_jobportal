@@ -37,4 +37,7 @@ public class User {
 
     @Column(name = "pcode")
     private String pcode;
+
+    @Column(name = "user_type")
+    private String user_type;
 }

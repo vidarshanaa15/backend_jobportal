@@ -54,6 +54,7 @@ public class UserServiceImpl implements UserService {
         user.setCity(updatedUser.getCity());
         user.setState(updatedUser.getState());
         user.setPcode(updatedUser.getPcode());
+        user.setUser_type(updatedUser.getUser_type());
 
         User updatedUserObj = userRepository.save(user);
 

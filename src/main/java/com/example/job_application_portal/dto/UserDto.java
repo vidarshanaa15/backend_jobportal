@@ -18,4 +18,5 @@ public class UserDto {
     private String city;
     private String state;
     private String pcode;
+    private String user_type;
 }
