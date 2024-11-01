@@ -11,8 +11,12 @@ public class AuthService {
     @Autowired
     private UserRepository userRepository;
 
-    public boolean authenticateUser(String username, String password) {
-        User user = userRepository.findByUsername(username); // Find user by username
-        return user != null && user.getPassword().equals(password);
+    public User authenticateUser(String username, String password) {
+        User user = userRepository.findByUsername(username);
+
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
+        return null;
     }
 }
