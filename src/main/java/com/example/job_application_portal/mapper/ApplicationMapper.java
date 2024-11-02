@@ -8,7 +8,7 @@ public class ApplicationMapper {
         return new ApplicationDto(
                 application.getId(),
                 application.getUser_id(),
-                application.getJob_id(),
+                application.getJobId(),
                 application.getGender(),
                 application.getDob(),
                 application.getPhoneNumber(),
@@ -23,7 +23,7 @@ public class ApplicationMapper {
         return new Application(
                 applicationDto.getId(),
                 applicationDto.getUser_id(),
-                applicationDto.getJob_id(),
+                applicationDto.getJobId(),
                 applicationDto.getGender(),
                 applicationDto.getDob(),
                 applicationDto.getPhoneNumber(),

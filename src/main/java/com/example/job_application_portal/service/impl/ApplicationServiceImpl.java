@@ -63,7 +63,7 @@ public class ApplicationServiceImpl implements ApplicationService {
 
         for (Application application : applications) {
             String userSkills = application.getSkills();
-            Long jobId = application.getJob_id();
+            Long jobId = application.getJobId();
             Optional<Job> optionalJob = jobRepository.findById(jobId);
 
             if (optionalJob.isPresent()) {
@@ -75,5 +75,13 @@ public class ApplicationServiceImpl implements ApplicationService {
                 applicationRepository.save(application);
             }
         }
+    }
+
+    @Override
+    public List<ApplicationDto> getApplicationByJobId(Long jobId) {
+        List<Application> applications = applicationRepository.findByJobId(jobId);
+        return applications.stream()
+                .map(ApplicationMapper::mapToApplicationDto)
+                .collect(Collectors.toList());
     }
 }

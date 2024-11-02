@@ -23,7 +23,7 @@ public class Application {
     private Long user_id;
 
     @Column(name = "job_id")
-    private Long job_id;
+    private Long jobId;
 
     @Column(name = "gender")
     private String gender;

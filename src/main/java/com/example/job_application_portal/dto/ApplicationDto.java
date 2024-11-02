@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class ApplicationDto {
     private Long id;
     private Long user_id;
-    private Long job_id;
+    private Long jobId;
     private String gender;
     private LocalDate dob;
     private String phoneNumber;
