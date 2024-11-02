@@ -38,7 +38,4 @@ public class ApplicationController {
         applicationService.deleteApplication(applicationId);
         return ResponseEntity.ok("Application deleted successfully!");
     }
-
-
-
 }

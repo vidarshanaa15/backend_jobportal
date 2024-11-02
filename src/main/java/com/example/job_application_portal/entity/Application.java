@@ -42,4 +42,7 @@ public class Application {
 
     @Column(name = "skills")
     private String skills;
+
+    @Column(name = "score")
+    private Double score;
 }

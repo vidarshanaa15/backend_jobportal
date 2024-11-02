@@ -21,4 +21,5 @@ public class ApplicationDto {
     private String qualification;
     private Integer experience;
     private String skills;
+    private Double score;
 }

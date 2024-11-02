@@ -12,4 +12,6 @@ public interface ApplicationService {
     List<ApplicationDto> getAllApplications();
 
     void deleteApplication(Long applicationId);
+
+    void updateApplicationScores();
 }

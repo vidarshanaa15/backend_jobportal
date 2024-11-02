@@ -14,7 +14,8 @@ public class ApplicationMapper {
                 application.getPhoneNumber(),
                 application.getQualification(),
                 application.getExperience(),
-                application.getSkills()
+                application.getSkills(),
+                application.getScore()
         );
     }
 
@@ -28,7 +29,8 @@ public class ApplicationMapper {
                 applicationDto.getPhoneNumber(),
                 applicationDto.getQualification(),
                 applicationDto.getExperience(),
-                applicationDto.getSkills()
+                applicationDto.getSkills(),
+                applicationDto.getScore()
         );
     }
 }
