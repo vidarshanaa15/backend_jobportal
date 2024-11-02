@@ -13,8 +13,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class ApplicationDto {
     private Long id;
-    private Integer user_id;
-    private Integer job_id;
+    private Long user_id;
+    private Long job_id;
     private String gender;
     private LocalDate dob;
     private String phoneNumber;

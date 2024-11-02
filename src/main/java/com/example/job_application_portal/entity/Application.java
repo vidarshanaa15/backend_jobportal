@@ -20,10 +20,10 @@ public class Application {
     private Long id;
 
     @Column(name = "user_id")
-    private Integer user_id;
+    private Long user_id;
 
     @Column(name = "job_id")
-    private Integer job_id;
+    private Long job_id;
 
     @Column(name = "gender")
     private String gender;

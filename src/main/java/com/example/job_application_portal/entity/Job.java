@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Job {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer jobId;
+    private Long jobId;
 
     @Column(name = "job", nullable = false)
     private String job;

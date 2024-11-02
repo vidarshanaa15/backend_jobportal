@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class JobDto {
-    private Integer jobId;
+    private Long jobId;
     private String job;
     private String company;
     private String jobType;
