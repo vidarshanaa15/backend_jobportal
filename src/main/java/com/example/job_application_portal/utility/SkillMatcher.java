@@ -14,6 +14,8 @@ public class SkillMatcher {
         int matchedSkills = userSkillSet.size();
         int totalJobSkills = jobSkillSet.size();
 
-        return totalJobSkills > 0 ? (matchedSkills / (double) totalJobSkills) * 100 : 0;
+        double score = totalJobSkills > 0 ? (matchedSkills / (double) totalJobSkills) * 100 : 0;
+
+        return Math.round(score * 100.0) / 100.0;
     }
 }
